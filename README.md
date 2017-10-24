@@ -9,8 +9,8 @@ clone the project
 * npm run start
 
 ### GET/POST/PUT From database
-* GET: localhost:3000/tasks
-    Returns JSON object
+* GET: localhost:3000/tasks<br />
+    Returns JSON object<br />
     Example:
 ```
         {
@@ -24,10 +24,10 @@ clone the project
         }
 ```   
 
-* POST: localhost:3000/tasks
-    Post with JSON object
-        Required: Name
-        Optinal: status, Created_date
+* POST: localhost:3000/tasks<br />
+    Post with JSON object<br />
+        Required: Name<br />
+        Optinal: status, Created_date<br />
 
-* PUT: localhost:3000/tasks:id
-    Post whit JSON object containing the parameters you want to change
+* PUT: localhost:3000/tasks:id<br />
+    Post whit JSON object containing the parameters you want to change<br />
