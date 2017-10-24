@@ -13,10 +13,11 @@ clone the project
     Returns JSON object<br />
     Example:
 
-```
-* GET: localhost:3000/tasks
-    Returns JSON objects
+
+* GET: localhost:3000/tasks<br />
+    Returns JSON objects<br />
     Example:
+```
     [
         {
             "_id": "59ef6ef8fcf16736dc144c12",
