@@ -12,6 +12,7 @@ clone the project
 * GET: localhost:3000/tasks
     Returns JSON object
     Example:
+```
         {
             "_id": "59ef6ef8fcf16736dc144c12",
             "name": "Test Task",
@@ -21,6 +22,7 @@ clone the project
             ],
             "Created_date": "2017-10-24T16:48:56.855Z"
         }
+```   
 
 * POST: localhost:3000/tasks
     Post with JSON object
