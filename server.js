@@ -1,5 +1,6 @@
 var express = require('express'),
   app = express(),
+  path = require('path'),
   port = process.env.PORT || 3000,
   mongoose = require('mongoose'),
   Task = require('./api/models/todoListModel'),
@@ -15,6 +16,10 @@ app.use(bodyParser.json());
 
 var routes = require('./api/routes/todoListRoutes');
 routes(app);
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dev/index.html'));
+});
 
 app.use(function(req, res) {
   res.status(404).send({url: req.originalUrl + ' not found'})
