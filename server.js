@@ -12,7 +12,10 @@ mongoose.connect('mongodb://Filip:Ninetech17!@ds231315.mlab.com:31315/todo-list'
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'dev')));
 
+app.use("/js", express.static(__dirname + 'dev/js'));
+console.log(__dirname);
 
 var routes = require('./api/routes/todoListRoutes');
 routes(app);
